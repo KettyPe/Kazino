@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>XUZBET</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__bg">
+				<picture><source srcset="img/header__bg_coins.webp" type="image/webp"><img src="img/header__bg_coins.png" alt=""></picture>
+			</div>
+			<div class="header__container">
+				<div class="header__body">
+					<h2 class="header__title subtitle"><span>100</span>% ЧЕСТНАЯ ИГРА</h2>
+					<div class="header__logo">
+						<picture><source srcset="img/Logo.webp" type="image/webp"><img src="img/Logo.png" alt="логотип"></picture>
+					</div>
+					<div class="header__buttons">
+						<button data-popup="#popup" type="button" class="header__btn button">ВХОД</button>
+						<button type="button" class="header__btn button">РЕГИСТРАЦИЯ</button>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="page__select select-block">
+				<div class="select-block__container">
+					<div class="select-block__body">
+						<h3 class="select-block__title subtitle">ВЫБЕРИ СВОЙ СТОЛ</h3>
+						<div class="select-block__items">
+							<div class="select-block__item">
+								<div class="select-block__amount">10</div>
+								<div class="select-block__image">
+									<picture><source srcset="img/coins_gold.webp" type="image/webp"><img src="img/coins_gold.png" alt="золотые монеты"></picture>
+								</div>
+							</div>
+							<div class="select-block__item">
+								<div class="select-block__amount">30</div>
+								<div class="select-block__image">
+									<picture><source srcset="img/coins_gold.webp" type="image/webp"><img src="img/coins_gold.png" alt="золотые монеты"></picture>
+								</div>
+							</div>
+							<div class="select-block__item">
+								<div class="select-block__amount">50</div>
+								<div class="select-block__image">
+									<picture><source srcset="img/coins_gold.webp" type="image/webp"><img src="img/coins_gold.png" alt="золотые монеты"></picture>
+								</div>
+							</div>
+							<div class="select-block__item">
+								<div class="select-block__amount">100</div>
+								<div class="select-block__image">
+									<picture><source srcset="img/coins_gold.webp" type="image/webp"><img src="img/coins_gold.png" alt="золотые монеты"></picture>
+								</div>
+							</div>
+						</div>
+						<div class="select-block__button">
+							<picture><source srcset="img/btn_coins.webp" type="image/webp"><img src="img/btn_coins.png" alt="кнопка с золотыми монетами"></picture>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__jackpot jackpot">
+				<div class="jackpot__bg">
+					<picture><source srcset="img/jackpot.webp" type="image/webp"><img src="img/jackpot.jpg" alt=""></picture>
+				</div>
+				<div class="jackpot__container">
+					<div class="jackpot__body">
+						<h4 class="jackpot__title jackpot__title_jeckpot subtitle">ДЖЕК-ПОТ ИГРА</h4>
+						<div class="jackpot__items">
+							<div class="jackpot__item">
+								<div class="jackpot__item-title">Большой ДЖЕК-ПОТ</div>
+								<div class="jackpot__image">
+									<picture><source srcset="img/coins_gold.webp" type="image/webp"><img src="img/coins_gold.png" alt="золотые монеты"></picture>
+								</div>
+								<p class="jackpot__text">ВЫИГРАЙ <span>5</span> раз и получи шанс на СУПЕРПРИЗ</p>
+							</div>
+							<div class="jackpot__item">
+								<div class="jackpot__item-title jackpot__item-title_silver">Малый ДЖЕК-ПОТ</div>
+								<div class="jackpot__image">
+									<picture><source srcset="img/coins_silver.webp" type="image/webp"><img src="img/coins_silver.png" alt="серебрянные монеты"></picture>
+								</div>
+								<p class="jackpot__text"><span>5</span> раз отвернулась удача КЭШБЭК-ПРИЗ</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="page__blick blick"></div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
+	</div>
+	<div hidden class="popup">
+		<div class="popup__wrapper">
+			<div data-close type="button" class="popup__close"><img src="img/close.svg" alt=""></div>
+			<div class="popup__content">
+				<div class="popup__body popup-reg">
+					<div class="popup-reg__image">
+						<picture><source srcset="img/reg_image.webp" type="image/webp"><img src="img/reg_image.jpg" alt=""></picture>
+					</div>
+					<div class="popup-reg__content">
+						<div class="popup-reg__title">РЕГИСТРАЦИЯ</div>
+						<form action="#" class="popup-reg__form">
+							<div class="popup-reg__items">
+								<div class="popup-reg__item">
+									<input autocomplete="off" type="text" name="form[]" placeholder="Логин" class="popup-reg__input">
+								</div>
+								<div class="popup-reg__item">
+									<input autocomplete="off" type="text" name="form[]" placeholder="Пароль" class="popup-reg__input">
+								</div>
+								<div class="popup-reg__item">
+									<input autocomplete="off" type="text" name="form[]" placeholder="Пароль" class="popup-reg__input">
+								</div>
+							</div>
+							<div class="popup-reg__checkbox checkbox">
+								<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+								<label for="c_1" class="checkbox__label"><span class="checkbox__text">Я согласен с условиями</span></label>
+							</div>
+							<button type="submit" class="popup-reg__button button">ВОЙТИ</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div hidden class="popup">
+		<div class="popup__wrapper">
+			<div type="button" class="popup__close"><img src="img/close.svg" alt=""></div>
+			<div class="popup__content">
+				<div class="popup__body popup-reg">
+					<div class="popup-reg__image">
+						<picture><source srcset="img/reg_image.webp" type="image/webp"><img src="img/reg_image.jpg" alt=""></picture>
+					</div>
+					<div class="popup-reg__content">
+						<div class="popup-reg__title">АВТОРИЗАЦИЯ</div>
+						<form action="#" class="popup-reg__form">
+							<div class="popup-reg__items">
+								<div class="popup-reg__item">
+									<input autocomplete="off" type="text" name="form[]" placeholder="Логин" class="popup-reg__input">
+								</div>
+								<div class="popup-reg__item">
+									<input autocomplete="off" type="text" name="form[]" placeholder="Пароль" class="popup-reg__input">
+								</div>
+							</div>
+							<div class="popup-reg__checkbox checkbox_login">
+								<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+								<label for="c_1" class="checkbox__label"><span class="checkbox__text">Я согласен с условиями</span></label>
+							</div>
+							<button type="submit" class="popup-reg__button button">ВОЙТИ</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
